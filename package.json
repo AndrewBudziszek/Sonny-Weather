@@ -23,6 +23,7 @@
   "type": "module",
   "dependencies": {
     "dotenv": "^10.0.0",
-    "node-geocoder": "^3.27.0"
+    "node-geocoder": "^3.27.0",
+    "@sveltejs/adapter-vercel": "next"
   }
 }
