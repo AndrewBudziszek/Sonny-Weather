@@ -5,7 +5,7 @@ export const weather = writable([]);
 export const fetchWeather = async (lat, lon) => {
     if(lat && lon) {
         const apikey = import.meta.env.VITE_OPENWEAHTER_API_KEY
-        const url = `http://api.openweathermap.org/data/2.5/onecall?lat=${lat}&lon=${lon}&appid=${apikey}`;
+        const url = `https://api.openweathermap.org/data/2.5/onecall?lat=${lat}&lon=${lon}&appid=${apikey}`;
         const res = await fetch(url);
         const data = await res.json();
         weather.set(data);
